@@ -1,0 +1,18 @@
+﻿<Window x:Class="PassWord.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PassWord"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation ="CenterScreen"
+        Title="注册码生成器" Height="350" Width="525">
+    
+    <Grid>
+        <Button x:Name="button" Content="生成" HorizontalAlignment="Left" Margin="384,132,0,0" VerticalAlignment="Top" Width="75" Height="23" Click="button_Click"/>
+        <Label x:Name="label" Content="请输入12位物理地址(格式：XX-XX-XX-XX-XX-XX)：" HorizontalAlignment="Left" Margin="57,104,0,0" VerticalAlignment="Top" Width="293"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="60,132,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="320" TextChanged="textBox_TextChanged"/>
+
+    </Grid>
+</Window>
